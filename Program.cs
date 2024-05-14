@@ -11,11 +11,12 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.Write("Enter a number: ");
-            string numInput = Console.ReadLine();
-            int num = 0;
-            int.TryParse(numInput,out num);
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(num);
+            for (int i = 1; i <=10; i++) // 0-9 1-10
+            {
+                Console.WriteLine("{0} x {1} = {2}", i, number, i*number);
+            }
 
 
             Console.ReadLine();
