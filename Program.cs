@@ -11,8 +11,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int age = 10;
-            age /= 3;
             int remaindar = age % 3;
+            age /= 3;
             Console.WriteLine(age);
             Console.WriteLine(remaindar);
 
