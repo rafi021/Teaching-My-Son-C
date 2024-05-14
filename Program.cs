@@ -10,26 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int age = 10;
-            int remaindar = age % 3;
-            age /= 3;
-            Console.WriteLine(age);
-            Console.WriteLine(remaindar);
-
-            string name = "Omar";
-            name += " loves programming";
+            Console.WriteLine("Hello My name is Omar Bin Ibrahim");
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
 
             Console.WriteLine(name);
-
-            char ch = 'a';
-            ch += 'b';
-            Console.WriteLine(ch);
-
-            int i = 0;
-            Console.WriteLine(i++); // 0
-            Console.WriteLine(++i); // 2 
-
-          
 
             Console.ReadLine();
         }
