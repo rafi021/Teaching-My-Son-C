@@ -15,18 +15,21 @@ namespace ConsoleApp1
          */
         static void Main(string[] args)
         {
-            Console.Write("Enter your message: ");
-            string message = Console.ReadLine();
+            int[] numbers = new int[3];  // define numbers array which have 3 items
+            numbers[0] = 1;
+            numbers[1] = 2;
+            numbers[2] = 3;
 
-            for (int i = 0; i < message.Length; i++)
+            // Console.WriteLine($"{numbers[0]} {numbers[1]} {numbers[2]}");
+
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.Write(message[i]);
+                Console.WriteLine($"{numbers[i]}");
             }
-            Console.WriteLine();
-            for (int i = message.Length -1; i > -1; i--)
-            {
-                Console.Write(message[i]);
-            }
+
+            int[] angles = {5,10,15};
+
+            //Console.WriteLine(angles);
 
             Console.ReadLine();
         }
