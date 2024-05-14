@@ -9,28 +9,24 @@ namespace ConsoleApp1
     internal class Program
     {
         /*
-         Create a for lopp from 1 to X (15)
-            3 and 5= FizzBuzz
-            3 = Fizz
-            5 = Buzz
-            else = number
+         Ask user to input message
+        print in order
+        print in reverse
          */
         static void Main(string[] args)
         {
-            Console.Write("Enter a number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter your message: ");
+            string message = Console.ReadLine();
 
-            for (int i = 1; i <=number; i++) 
+            for (int i = 0; i < message.Length; i++)
             {
-                if (i % 3 == 0 && i % 5 == 0)
-                    Console.WriteLine("FizzBuzz");
-                else if (i % 3 == 0)
-                    Console.WriteLine("Fizz");
-                else if (i % 5 == 0)
-                    Console.WriteLine("Buzz");
-                else Console.WriteLine(i);
+                Console.Write(message[i]);
             }
-
+            Console.WriteLine();
+            for (int i = message.Length -1; i > -1; i--)
+            {
+                Console.Write(message[i]);
+            }
 
             Console.ReadLine();
         }
