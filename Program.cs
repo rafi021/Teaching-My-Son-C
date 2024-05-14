@@ -10,11 +10,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello My name is Omar Bin Ibrahim");
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
+            Console.Write("Enter a number: ");
+            string numInput = Console.ReadLine();
+            int num = 0;
+            int.TryParse(numInput,out num);
 
-            Console.WriteLine(name);
+            Console.WriteLine(num);
+
 
             Console.ReadLine();
         }
